@@ -3,7 +3,7 @@ import { Request, Response } from 'express';
 
 @Controller('forecast')
 export class ForecastController {
-  @Get('')
+  @Get()
   public getForecastForgeLoggedUser(_: Request, res: Response): void {
     res.send([
       {
